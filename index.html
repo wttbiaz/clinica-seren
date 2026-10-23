@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238C5A4A'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23FBF7F3' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 </head>
-<body>
+<body class="oliva">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="topbar">
@@ -36,6 +36,7 @@
       <a class="logo" href="#" aria-label="Clínica Seren, início">Seren</a>
       <nav aria-label="Navegação principal">
         <ul class="nav">
+          <li><a href="#quem-somos">Quem somos</a></li>
           <li><a href="#tratamentos">Tratamentos</a></li>
           <li><a href="#como-agendar">Como agendar</a></li>
           <li><a href="#horarios">Horários</a></li>
@@ -70,6 +71,44 @@
       </div>
     </section>
 
+    <!-- Quem somos -->
+    <section id="quem-somos" class="block about" aria-labelledby="quem-titulo">
+      <div class="wrap about__grid">
+        <figure class="about__figure">
+          <img src="img/espaco-640.webp"
+               srcset="img/espaco-640.webp 640w, img/espaco-1000.webp 1000w"
+               sizes="(min-width: 900px) 36vw, 90vw"
+               width="640" height="800" loading="lazy" decoding="async"
+               alt="Sala de atendimento com maca, toalha dobrada e uma janela grande de vidro">
+          <figcaption>A sala de atendimento.</figcaption>
+        </figure>
+        <div class="about__text">
+          <p class="kicker">Quem somos</p>
+          <h2 id="quem-titulo">Uma clínica pequena, de propósito.</h2>
+          <div class="about__letter">
+            <p>Sou a Marina, esteticista. Abri a Seren porque cansei de atendimento com hora para acabar: uma cliente saindo enquanto a próxima já espera, o mesmo protocolo para todo mundo.</p>
+            <p>Aqui eu atendo com calma. Antes de qualquer tratamento, olho a sua pele e pergunto da sua rotina. Se o que você pediu não for o melhor para agora, eu falo.</p>
+            <p>O espaço é uma sala só, silenciosa e com luz natural. Você não divide o horário com ninguém.</p>
+            <p class="about__sign">Marina</p>
+          </div>
+        </div>
+        <ul class="about__principles" aria-label="Como atendemos">
+          <li>
+            <h3>Uma cliente por vez</h3>
+            <p>Ninguém esperando na sala ao lado. O horário é todo seu.</p>
+          </li>
+          <li>
+            <h3>Avaliação antes de tudo</h3>
+            <p>Na primeira visita, conversamos e olhamos a sua pele antes de começar qualquer tratamento.</p>
+          </li>
+          <li>
+            <h3>Produto escolhido para a sua pele</h3>
+            <p>Nada de protocolo pronto. O que vai no seu rosto depende do que ele precisa naquele dia.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- 2. Tratamentos -->
     <section id="tratamentos" class="block treat" aria-labelledby="tratamentos-titulo">
       <div class="wrap treat__grid">
@@ -81,35 +120,63 @@
         <ol class="treat__list">
           <li class="treat__item">
             <span class="treat__num" aria-hidden="true">01</span>
-            <div>
-              <h3>Limpeza de pele</h3>
-              <p>Tiramos cravos e impurezas com calma, sem machucar. No fim, uma massagem leve e protetor solar.</p>
-            </div>
+            <h3>Limpeza de pele</h3>
             <img class="treat__thumb" src="img/limpeza-de-pele-192.webp" width="192" height="240" loading="lazy" decoding="async" alt="Esteticista limpando o rosto de uma cliente com discos de algodão">
+            <div class="treat__details">
+              <dl class="treat__facts">
+                <div><dt>Para quem</dt><dd>Pele oleosa ou mista, com cravos e poros entupidos. Com acne inflamada, avaliamos antes.</dd></div>
+                <div><dt>Como é</dt><dd><ol class="treat__how"><li>Higienização e esfoliação leve.</li><li>Extração dos cravos, sem pressa.</li><li>Máscara calmante e protetor solar.</li></ol></dd></div>
+                <div><dt>Duração</dt><dd>Cerca de 1h a 1h30.</dd></div>
+                <div><dt>Frequência</dt><dd>A cada 30 a 45 dias.</dd></div>
+                <div><dt>Depois</dt><dd>Evite sol forte e maquiagem nas 24 horas seguintes.</dd></div>
+              </dl>
+              <a class="treat__cta" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20limpeza%20de%20pele." target="_blank" rel="noopener">Agendar este tratamento<span class="visually-hidden">: limpeza de pele</span></a>
+            </div>
           </li>
           <li class="treat__item">
             <span class="treat__num" aria-hidden="true">02</span>
-            <div>
-              <h3>Hidratação facial</h3>
-              <p>Para pele repuxando ou sem brilho. A máscara é escolhida na hora, depois de ver como a sua pele está naquele dia.</p>
-            </div>
+            <h3>Hidratação facial</h3>
             <img class="treat__thumb" src="img/hidratacao-facial-192.webp" width="192" height="240" loading="lazy" decoding="async" alt="Rosto de mulher com máscara facial de tecido">
+            <div class="treat__details">
+              <dl class="treat__facts">
+                <div><dt>Para quem</dt><dd>Pele ressecada, repuxando ou sem brilho, inclusive depois de muito sol ou ar-condicionado.</dd></div>
+                <div><dt>Como é</dt><dd><ol class="treat__how"><li>Limpeza suave.</li><li>Máscara e ativos hidratantes, escolhidos na hora.</li><li>Massagem leve até a pele absorver.</li></ol></dd></div>
+                <div><dt>Duração</dt><dd>Cerca de 45 minutos a 1 hora.</dd></div>
+                <div><dt>Frequência</dt><dd>A cada 15 a 30 dias.</dd></div>
+                <div><dt>Depois</dt><dd>Mantenha o hidratante e o protetor solar em casa, todos os dias.</dd></div>
+              </dl>
+              <a class="treat__cta" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20hidrata%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener">Agendar este tratamento<span class="visually-hidden">: hidratação facial</span></a>
+            </div>
           </li>
           <li class="treat__item">
             <span class="treat__num" aria-hidden="true">03</span>
-            <div>
-              <h3>Drenagem linfática</h3>
-              <p>Movimentos leves e ritmados, no corpo todo ou só nas pernas. Ajuda a desinchar e deixa o corpo mais leve.</p>
-            </div>
+            <h3>Drenagem linfática</h3>
             <img class="treat__thumb" src="img/drenagem-linfatica-192.webp" width="192" height="240" loading="lazy" decoding="async" alt="Mãos de terapeuta massageando as costas de uma cliente">
+            <div class="treat__details">
+              <dl class="treat__facts">
+                <div><dt>Para quem</dt><dd>Pernas inchadas, sensação de peso e retenção de líquido. Em pós-operatório, só com liberação médica.</dd></div>
+                <div><dt>Como é</dt><dd><ol class="treat__how"><li>Conversa rápida sobre onde incomoda.</li><li>Movimentos leves e ritmados, no corpo todo ou só nas pernas.</li></ol></dd></div>
+                <div><dt>Duração</dt><dd>Cerca de 1 hora.</dd></div>
+                <div><dt>Frequência</dt><dd>1 a 2 vezes por semana no começo. Depois, conforme a avaliação.</dd></div>
+                <div><dt>Depois</dt><dd>Beba bastante água ao longo do dia.</dd></div>
+              </dl>
+              <a class="treat__cta" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20drenagem%20linf%C3%A1tica." target="_blank" rel="noopener">Agendar este tratamento<span class="visually-hidden">: drenagem linfática</span></a>
+            </div>
           </li>
           <li class="treat__item">
             <span class="treat__num" aria-hidden="true">04</span>
-            <div>
-              <h3>Design de sobrancelhas</h3>
-              <p>Medimos, desenhamos e só então tiramos os fios. O desenho segue o formato do seu rosto, não a moda do momento.</p>
-            </div>
+            <h3>Design de sobrancelhas</h3>
             <img class="treat__thumb" src="img/design-de-sobrancelhas-192.webp" width="192" height="240" loading="lazy" decoding="async" alt="Profissional medindo a sobrancelha de uma cliente">
+            <div class="treat__details">
+              <dl class="treat__facts">
+                <div><dt>Para quem</dt><dd>Quem quer um desenho que combine com o rosto, ou corrigir depois de deixar crescer.</dd></div>
+                <div><dt>Como é</dt><dd><ol class="treat__how"><li>Medição do rosto.</li><li>Desenho a lápis, para você aprovar.</li><li>Remoção dos fios com pinça e cera.</li></ol></dd></div>
+                <div><dt>Duração</dt><dd>Cerca de 30 a 40 minutos.</dd></div>
+                <div><dt>Frequência</dt><dd>A cada 15 a 20 dias.</dd></div>
+                <div><dt>Depois</dt><dd>Evite maquiagem e sol direto na região por 24 horas.</dd></div>
+              </dl>
+              <a class="treat__cta" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20design%20de%20sobrancelhas." target="_blank" rel="noopener">Agendar este tratamento<span class="visually-hidden">: design de sobrancelhas</span></a>
+            </div>
           </li>
         </ol>
 
@@ -218,8 +285,9 @@
         <a href="https://www.pexels.com/photo/woman-getting-a-facial-treatment-3985329/">Gustavo Fring</a>,
         <a href="https://www.pexels.com/photo/a-close-up-shot-of-a-woman-with-a-sheet-mask-on-face-7520460/">Darina Belonogova</a>,
         <a href="https://www.pexels.com/photo/person-lying-in-bed-getting-massage-3865793/">Elina Fairytale</a>,
-        <a href="https://www.pexels.com/photo/professional-eyebrow-shaping-at-beauty-salon-29588096/">Alexander Mass</a> e
-        <a href="https://www.pexels.com/photo/green-potted-plant-in-minimalistic-bathroom-with-body-care-tools-4210314/">Karola G (Kaboompics)</a>.
+        <a href="https://www.pexels.com/photo/professional-eyebrow-shaping-at-beauty-salon-29588096/">Alexander Mass</a>,
+        <a href="https://www.pexels.com/photo/green-potted-plant-in-minimalistic-bathroom-with-body-care-tools-4210314/">Karola G (Kaboompics)</a> e
+        <a href="https://www.pexels.com/photo/settee-by-the-window-6628520/">KoolShooters</a>.
       </p>
     </div>
   </footer>
