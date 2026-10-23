@@ -23,8 +23,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@400;500&display=swap">
-  <link rel="preload" as="image" href="img/hero-640.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1000.webp 1000w" imagesizes="(min-width: 900px) 38vw, 88vw">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..500;1,9..144,400..500&family=Jost:wght@400;500&display=swap">
+  <link rel="preload" as="image" href="img/hero-640.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1000.webp 1000w" imagesizes="(min-width: 900px) 34vw, 82vw">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238C5A4A'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23FBF7F3' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 </head>
@@ -54,19 +54,19 @@
           <span class="line"><span>Pele cuidada</span></span>
           <span class="line"><span><em>sem pressa.</em></span></span>
         </h1>
+        <div class="hero__text">
+          <p>Atendemos uma cliente por vez. Você chega, a gente conversa sobre a sua pele e só depois começa.</p>
+          <a class="btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        </div>
         <figure class="hero__figure">
           <img src="img/hero-640.webp"
                srcset="img/hero-640.webp 640w, img/hero-1000.webp 1000w"
-               sizes="(min-width: 900px) 38vw, 88vw"
+               sizes="(min-width: 900px) 34vw, 82vw"
                width="640" height="880"
                alt="Profissional fazendo massagem facial em uma cliente deitada em maca"
                fetchpriority="high">
           <figcaption>Massagem facial, no fim da limpeza de pele.</figcaption>
         </figure>
-        <div class="hero__text">
-          <p>Atendemos uma cliente por vez. Você chega, a gente conversa sobre a sua pele e só depois começa.</p>
-          <a class="btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
-        </div>
       </div>
     </section>
 
@@ -134,21 +134,21 @@
       <div class="wrap steps__grid">
         <header class="steps__head">
           <p class="kicker">Como agendar</p>
-          <h2 id="agendar-titulo">Três mensagens e está marcado.</h2>
+          <h2 id="agendar-titulo">Agendar é simples.</h2>
         </header>
         <ol class="steps__list">
           <li>
-            <span class="steps__num" aria-hidden="true">1</span>
+            <span class="steps__num" aria-hidden="true">01</span>
             <h3>Mande uma mensagem</h3>
             <p>Pelo WhatsApp. Diga qual tratamento quer fazer, ou pergunte, se ainda estiver em dúvida.</p>
           </li>
           <li>
-            <span class="steps__num" aria-hidden="true">2</span>
+            <span class="steps__num" aria-hidden="true">02</span>
             <h3>Escolha o dia</h3>
             <p>Mandamos os horários livres da semana. Você escolhe o que encaixa na sua rotina.</p>
           </li>
           <li>
-            <span class="steps__num" aria-hidden="true">3</span>
+            <span class="steps__num" aria-hidden="true">03</span>
             <h3>Venha no horário</h3>
             <p>Na véspera, confirmamos por mensagem e mandamos o endereço.</p>
           </li>
@@ -178,6 +178,8 @@
     <section id="localizacao" class="block place" aria-labelledby="localizacao-titulo">
       <div class="wrap place__grid">
         <div class="place__map">
+          <!-- Aparece enquanto o mapa carrega ou se ele for bloqueado -->
+          <p class="place__fallback" aria-hidden="true">Mapa do bairro Jardins, São Paulo</p>
           <iframe
             src="https://www.google.com/maps?q=Jardins%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;z=14&amp;output=embed"
             title="Mapa do bairro Jardins, em São Paulo"
@@ -188,6 +190,7 @@
         <header class="place__text">
           <p class="kicker">Onde estamos</p>
           <h2 id="localizacao-titulo">Jardins, São Paulo</h2>
+          <a class="place__link" href="https://www.google.com/maps/search/?api=1&amp;query=Jardins%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>
         </header>
       </div>
     </section>
